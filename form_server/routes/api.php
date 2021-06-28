@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post("/", [FormController::class, "formData"]); /* Note that "/api"
 will be added to the specified routes since the api route file is used */
+Route::post("/search", [FormController::class, "dbsearch"]);
